@@ -22,7 +22,7 @@ Reproducible pipeline for layout-faithful extraction of tables from ***USGS Mine
 ## **2. REPOSITORY STRUCTURE**
 
 ```text
-src/
+src/docx extractor/
   pdf_converter.py       # Wrapper around pdf2docx for reproducible PDF → DOCX conversion
   docx_extractor.py      # Core extraction logic: DOCX parsing, table capture, flagging, export
   utils.py               # Utility functions (section headings, minimal cleaning, sheet naming)
