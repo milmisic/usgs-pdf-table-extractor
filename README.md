@@ -1,6 +1,8 @@
 # usgs-pdf-table-extractor
 
 Reproducible pipeline for layout-faithful extraction of tables from ***USGS Mineral Commodity Summary*** PDFs, which are not provided in a machine-readable format. The pipeline converts PDF → DOCX → raw Excel tables, preserving structure and artifacts and flagging superscripts and subscripts. Semantic reconstruction and normalization are intentionally out of scope and handled in a separate downstream stage.
+
+
 ### **1. SCOPE and NON-GOALS**
 
 **What this project does:**
@@ -21,19 +23,19 @@ Reproducible pipeline for layout-faithful extraction of tables from ***USGS Mine
 
 ```text
 src/
-  pdf_converter.py
-  docx_extractor.py
-  utils.py
+  pdf_converter.py       # Wrapper around pdf2docx for reproducible PDF → DOCX conversion
+  docx_extractor.py      # Core extraction logic: DOCX parsing, table capture, flagging, export
+  utils.py               # Utility functions (section headings, minimal cleaning, sheet naming)
 
 scripts/
-  run_extractor.py        # batch / headless (authoritative)
-  run_gui.py              # interactive QA / inspection
+  run_extractor.py        # Batch entry point for reproducible, headless extraction
+  run_gui.py              # Optional graphical interface for interactive inspection and QA
 
 notebooks/
-  complete_workflow.ipynb # demonstration + QA walkthrough
+  complete_workflow.ipynb # Demonstration + QA walkthrough
 
 examples/
-  input/                  # small illustrative files only
+  input/                  # Small illustrative files only
   output/
 
 data/                     # gitignored
