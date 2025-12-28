@@ -28,11 +28,10 @@ src/docx extractor/
   utils.py               # Utility functions (section headings, minimal cleaning, sheet naming)
 
 scripts/
-  run_extractor.py        # Batch entry point for reproducible, headless extraction
-  run_gui.py              # Optional graphical interface for interactive inspection and QA
-
-notebooks/
-  complete_workflow.ipynb # Demonstration + QA walkthrough
+  run_extraction.py      # Batch entry point for reproducible, headless extraction
+  run_gui.py             # Optional graphical interface for interactive inspection and QA
+  run_extraction.bat     # Windows launcher for run_extraction.py
+  run_gui.bat            # Windows launcher for run_gui.py
 
 examples/
   input/                  # Small illustrative files only
