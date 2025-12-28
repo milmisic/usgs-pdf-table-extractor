@@ -1,0 +1,12 @@
+# Core dependencies
+
+python-docx>=0.8.11
+pandas>=1.3.0
+openpyxl>=3.0.0
+xlsxwriter>=3.0.0
+
+# PDF conversion
+pdf2docx>=0.5.0
+
+# Optional but recommended
+jupyter>=1.0.0
