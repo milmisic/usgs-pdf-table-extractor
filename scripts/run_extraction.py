@@ -1,7 +1,5 @@
 """
-Simple usage example for PDF/Word table extraction.
-
-This script demonstrates basic usage of the DocxTableExtractor.
+PDF/Word table extraction.
 """
 
 from pathlib import Path
@@ -64,4 +62,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
