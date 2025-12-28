@@ -34,10 +34,10 @@ scripts/
   run_gui.bat            # Windows launcher for run_gui.py
 
 examples/
-  input/                  # Small illustrative files only
+  input/                 # Small illustrative files only
   output/
 
-data/                     # gitignored
+data/                    # gitignored
   raw_pdf/
   intermediate_docx/
   raw_xlsx/
